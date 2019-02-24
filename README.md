@@ -13,6 +13,7 @@
 ## Visuals
 
 **Starter page**
+
 ![starter](docs/images/screenshot_starter.png)
 
 ## Description
