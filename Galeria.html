@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL">
+<head>
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta charset="utf-8" />
+     <title>Cukiernictwo</title>
+    <meta name="description" content="Cukiernictwo" />
+    <meta name="keywords" content="desserts, cakes, sugar">
+    
+    <meta name="author" content="Szymon Pietkun">
+    <link rel="Stylesheet" href="Stylesheet1.css" />
+	
+	<link rel="stylesheet" href="jqueryui/jquery-ui.css"> 
+	<script src="jqueryui/external/jquery/jquery.js"></script>
+	<script src="jqueryui/jquery-ui.js"></script>
+</head>
+<body>
+    <nav class="flexboxnav">
+    <div class="dropdown">
+        <button class="dropbutton">MENU</button>
+        <div class="dropdown-content">
+            <a href="#tresc">Treść</a>
+			<a href="#tabelka">Przelicznik</a>
+			<a href="Linki.html#dolinkow">Źródła</a>
+        </div>
+    </div>
+        <a href="index.html" class="menu">INTRO</a>
+		<a href="historia.html" class="menu">HISTORIA</a>
+        <a href="Galeria.html" class="menu" id="current">GALERIA</a>
+        <a href="Linki.html" class="menu">FORMULARZ</a>
+
+    </nav>
+    <header class="header2">
+        <div class="tlo_naglowka">
+            <p class="naglowek" id="chowany">GALERIA</p>
+        </div>
+    </header>
+    <main class="flexbox">
+        <header class="tlo_tytulu">
+            <a id="tresc"></a>
+            <h1 class="tytul">Galeria tortów</h1>
+			<button type="button" class="tohide" id="ukryj">Ukryj napis</button>
+			
+			<button type="button" class="tohide" id ="pokaż" >Pokaż napis</button>
+			
+        </header>
+        <div class="galeria">
+            <a target="_blank" href="images/1.jpg">
+                <img src="images/1.jpg" alt="Malinowy">
+            </a>
+            <div class="podpis">Malinowy</div>
+        </div>
+
+        <div class="galeria">
+            <a target="_blank" href="images/21.jpg">
+                <img src="images/21.jpg" alt="Borówkowy">
+            </a>
+            <div class="podpis">Borówkowy</div>
+        </div>
+
+        <div class="galeria">
+            <a target="_blank" href="images/26.jpg">
+                <img src="images/26.jpg" alt="Granatowy">
+            </a>
+            <div class="podpis">Granatowy</div>
+        </div>
+
+        <div class="galeria">
+            <a target="_blank" href="images/23.jpg">
+                <img src="images/23.jpg" alt="Gruszkowy">
+            </a>
+            <div class="podpis">Gruszkowy</div>
+        </div>
+
+        <div class="galeria">
+            <a target="_blank" href="images/24.jpg">
+                <img src="images/24.jpg" alt="Tiramisu">
+            </a>
+            <div class="podpis">Tiramisu</div>
+        </div>
+
+        <div class="galeria">
+            <a target="_blank" href="images/25.jpg">
+                <img src="images/25.jpg" alt="Truskawkowy">
+            </a>
+            <div class="podpis">Truskawkowy</div>
+        </div>
+		
+    </main>
+    <section>
+	<a id="tabelka"></a>
+        <header class="tlo_tytulu">
+            <h2 class="tytul">Przelicznik</h2>
+        </header>
+        <table class="tab">
+            <tr id="tr">
+                <th>Produkt</th>
+                <th>Szklanka (250ml)</th>
+                <th>Łyżka (15ml)</th>
+                <th>Łyżeczka (5ml)</th>
+            </tr>
+            <tr >
+                <td>cukier</td>
+                <td>220g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>mąka</td>
+                <td>170g</td>
+                <td>10g</td>
+                <td>3g</td>
+            </tr>
+            <tr>
+                <td>woda</td>
+                <td>250g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>mleko</td>
+                <td>220g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>miód</td>
+                <td>350g</td>
+                <td>21g</td>
+                <td>7g</td>
+            </tr>
+            <tr>
+                <td>masło</td>
+                <td>322g</td>
+                <td>20g</td>
+                <td>7g</td>
+            </tr>
+            <tr>
+                <td>sól</td>
+                <td>300g</td>
+                <td>19g</td>
+                <td>6g</td>
+            </tr>
+            <tr>
+                <td>olej</td>
+                <td>225g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>kakao</td>
+                <td>125g</td>
+                <td>7g</td>
+                <td>2,5g</td>
+            </tr>
+            <tr>
+                <td>śmietana 30%</td>
+                <td>270g</td>
+                <td>16g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>śmietana 18%</td>
+                <td>220g</td>
+                <td>12g</td>
+                <td>4g</td>
+            </tr>
+        </table>
+
+        <div class="anim"><img src="images/cake.svg" class="svg" alt="Cake"></div>
+    </section>
+    <div style="clear: both;"></div>
+    <footer>
+        <p class="tytul">Aby móc w pełni wykorzystać potencjał strony, należy używać przeglądarkę obsługującą Javascript.</p>
+    </footer>
+	<script src="myScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+﻿<!DOCTYPE HTML>
+
+<html lang="pl-PL">
+<head>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+	<meta charset="utf-8" />
+     <title>Cukiernictwo</title>
+    <meta name="description" content="Cukiernictwo" />
+    <meta name="keywords" content="desserts, cakes, sugar">
+    
+    <meta name="author" content="Szymon Pietkun">
+    <link rel="Stylesheet" href="Stylesheet1.css" />
+	
+	<link rel="stylesheet" href="jqueryui/jquery-ui.css"> 
+	<script src="jqueryui/external/jquery/jquery.js"></script>
+	<script src="jqueryui/jquery-ui.js"></script>
+</head>
+<body onload= "zmien_tlo()">
+    <nav class="flexboxnav">
+    <div class="dropdown">
+        <button class="dropbutton">MENU</button>
+        <div class="dropdown-content">
+            <a href="#tresc">Treść</a>
+			<a href="#tabelka">Przelicznik</a>
+			<a href="Linki.html#dolinkow">Źródła</a>
+        </div>
+    </div>
+        <a href="index.html" class="menu">INTRO</a>
+		<a href="historia.html" class="menu" id="current">HISTORIA</a>
+        <a href="Galeria.html" class="menu">GALERIA</a>
+        <a href="Linki.html" class="menu">FORMULARZ</a><br class="brr">
+
+    </nav>
+    <header class="header3">
+        <div class="tlo_naglowka">
+            <p class="naglowek">HISTORIA</p>
+        </div>
+    </header>
+    <main id="main">
+        <header class="tlo_tytulu">
+            <a id="tresc"></a>
+            <h1 class="tytul">Ciekawostki</h1>
+        </header>
+			<button class="respons" id="noc" type="button" onclick="klikam_noc(); zmien_tlo()" >Tryb nocny </button>
+			
+			<button class="respons" id="dzien" type="button" onclick="cofamklik(); zmien_tlo()" >Tryb dzienny</button>
+			
+
+			<ul class="wyliczenie">
+			<li>1. Dawno, dawno temu, w czasach prehistorycznych, nie znano cukru.</li>
+			<li>2. Jednak już wtedy znano smak słodyczy (słodkości) – pochodzący z miodu wytwarzanego
+przez dzikie pszczoły, owoców, soku brzozy i soku klonowego. Ziarno to prażono.
+</li>
+			<li>3. Zanim powstały wyroby cukiernicze znano już pieczywo, ale jeszcze wcześniej, ok. 10
+tysięcy lat temu, wykorzystywano ziarno zboża. </li>
+			<li>4. W epoce neolitu z ziarna zboża robiono pierwsze placki. Wypiekano je na węglach, w
+popiele i na rozżarzonym kamieniu.</li>
+			<li>5. W epoce brązu powstawały piece ceramiczne do wypieku placków i chleba tzw. przaśnego,
+nieukwaszanego. Miały kształt dzwonu.</li>
+			<li>6. Egipskie malowidła pokazują, że w czasach faraonów istniały piekarnie, w których w
+sposób zorganizowany wypiekano już chleb ukwaszony. Do słodzenia pieczywa używali ziaren z drzewa świętojańskiego.
+</li>
+			<li>7. Z czasem do ciasta na pieczywo zaczęto dodawać miód – powstawało pierwsze pieczywo
+cukiernicze. Pszczoły zaczęto hodować w ogrodach, w dzbanach.</li>
+			<li>8. W Indiach, a potem w krajach położonych nad Morzem Śródziemnym, uprawiano trzcinę
+cukrową, która przez następne wieki była głównym źródłem cukru. Sekret wykorzystania
+trzciny wykradli Arabowie w VII wieku.</li>
+			<li>9. Spartanie podawali na ucztach weselnych ciastka zwane opłatkami, pieczone w Grecji
+pomiędzy dwoma gorącymi żelazkami. Dlatego pierwszych cukierników nazywano
+opłatkowcami. Dziś piecze się tak ciasto waflowe.</li>
+			<li>10. Grecy i Rzymianie używali różnych form do pieczenia. Stosowali też drożdże w postaci
+osadów po produkcji piwa lub wina do spulchniania ciast. Znali też już masło, tak ważne w
+cukiernictwie dzisiaj. </li>
+			<li>11. W XI wieku powstała pierwsza w Europie szkoła cukiernicza założona w Salerno przez
+Arabów. Uczono w niej m.in. wytwarzania cukru z trzciny cukrowej, sporządzania soków i konfitur
+oraz lekarstw. Miód i cukier uważane były wtedy za lekarstwo.</li>
+			<li>12. W XIII wieku zaczęto produkować pierniki, dzięki wykorzystaniu przypraw takich jak
+pieprz, cynamon, imbir, goździki, sprowadzanych dzięki odkryciom geograficznym. Marco Polo przywiózł z Chin przepisy na lody, znane tam już 4 tys. lat.</li>
+			<li>13. Ważnym etapem w rozwoju produkcji wyrobów ciastkarskich było uzyskiwanie jasnych
+gatunków mąki.</li>
+			<li>14. 1348 – we Francji powstało ciasto sabaudzkie, dzisiejsze biszkopty, wtedy formowane
+łyżką.</li>
+			<li>15. Jeszcze ważniejsze było uruchomienie w Europie produkcji cukru. W XVI wieku w
+Niemczech powstała pierwsza w europie fabryka cukru z trzciny cukrowej sprowadzanej
+najpierw z Azji a potem z Ameryki (trzcinę cukrową zaczęto uprawiać w Ameryce dzięki
+temu, że zawiózł ją tam Kolumb).</li>
+			<li>16. w 1504 sprowadzono z Ameryki do Europy wanilię a 1585 r. sprowadzono po raz
+pierwszy ziarno kakao, znane od wieków w Ameryce Środkowej a wykorzystywane do
+sporządzania napojów. W XVII wieku zaczęto z niego produkować napój czekoladowy w
+Europie a w 1848 powstała pierwsza tabliczka czekolady.</li>
+			<li>17. W 1540 we Francji wyprodukowano pierwsze ciasto ptysiowe (parzone) a w 1660 po raz
+pierwszy sporządzono bitą śmietanę.</li>
+			<li>18. W XVII w. kucharzowi księcia du Praslin do syropu wpadł migdał – dzięki temu wpadł na
+pomysł sporządzenia cukierka, który nazwał pralinką.
+</li>
+			<li>19. W 1740 – król Polski Stanisław Leszczyński poszukiwał nowości. Zanurzył ciasto w
+syropie (inna wersja mówi, że obsypał cukrem, polał rumem i podpalił) i nadał mu nazwę
+„Ali-Baba”, szybko skróconą do nazwy „Baba” używanej do dziś.</li>
+			<li>20. W XVIII wieku niemiecki profesor Margraf odkrył cukier w buraku cukrowym. Na
+początku wieku XIX w Kowarach na Śląsku powstała pierwsza cukrownia produkująca cukier
+z buraka cukrowego.</li>
+			<li>21. Do spulchniania ciast zaczęto wykorzystywać drożdże. W 1800 roku powstała pierwsza
+fabryka drożdży.</li>
+			<li>22. Wiek XIX to rozkwit cukiernictwa:
+			<ul>
+						<li>1808 - w Paryżu wyprodukowano pierwszą chałkę.</li>
+						<li>1820 – wynaleziono worek cukierniczy, stosowany do dziś</li>
+						<li>1830 – amerykańska gospodyni (Nancy Johnson) wynalazła maszynę do lodów.</li>
+						<li>1865 - 1869 - Napoleon ogłosił konkurs na odkrycie produktu mogącego zastąpić masło
+marynarzom - Mege-Mouries wynalazł margarynę (margon znaczy kolor perły).
+</li>
+						<li>1870 – Ludwik Pasteur określa zasady pasteryzacji, niezwykle ważne także w
+cukiernictwie.</li>
+			</ul> 
+			</li>
+			<li>22. Rozwój cukiernictwa trwa nadal. Powstają coraz lepsze maszyny, cukiernicy dysponują
+całą gamą różnych surowców i półproduktów.
+
+			</ul>
+    </main>
+    <section>
+	<a id="tabelka"></a>
+        <header class="tlo_tytulu">
+            <h2 class="tytul">Przelicznik</h2>
+        </header>
+        <table class="tab">
+            <tr id="tr">
+                <th>Produkt</th>
+                <th>Szklanka (250ml)</th>
+                <th>Łyżka (15ml)</th>
+                <th>Łyżeczka (5ml)</th>
+            </tr>
+            <tr >
+                <td>cukier</td>
+                <td>220g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>mąka</td>
+                <td>170g</td>
+                <td>10g</td>
+                <td>3g</td>
+            </tr>
+            <tr>
+                <td>woda</td>
+                <td>250g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>mleko</td>
+                <td>220g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>miód</td>
+                <td>350g</td>
+                <td>21g</td>
+                <td>7g</td>
+            </tr>
+            <tr>
+                <td>masło</td>
+                <td>322g</td>
+                <td>20g</td>
+                <td>7g</td>
+            </tr>
+            <tr>
+                <td>sól</td>
+                <td>300g</td>
+                <td>19g</td>
+                <td>6g</td>
+            </tr>
+            <tr>
+                <td>olej</td>
+                <td>225g</td>
+                <td>15g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>kakao</td>
+                <td>125g</td>
+                <td>7g</td>
+                <td>2,5g</td>
+            </tr>
+            <tr>
+                <td>śmietana 30%</td>
+                <td>270g</td>
+                <td>16g</td>
+                <td>5g</td>
+            </tr>
+            <tr>
+                <td>śmietana 18%</td>
+                <td>220g</td>
+                <td>12g</td>
+                <td>4g</td>
+            </tr>
+        </table>
+		
+        <div class="anim"><img src="images/cake.svg" class="svg" alt="Cake"></div>
+    </section>
+    <div style="clear: both;"></div>
+    <footer>
+        <p class="tytul">Aby móc w pełni wykorzystać potencjał strony, należy używać przeglądarkę obsługującą Javascript.</p>
+    </footer>
+	<script src="myScript.js"></script>
+</body>
+</html>
